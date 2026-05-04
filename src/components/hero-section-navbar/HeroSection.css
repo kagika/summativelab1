@@ -1,0 +1,76 @@
+/* Hero section */
+.hero-section{
+  height: 90vh;
+  background-image: url('/src/assets/wordlybg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position:relative;
+  z-index: 0;
+}
+
+.overlay{
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  backdrop-filter:blur(15px) ;
+  z-index: 1;
+}
+.hero-section-layedover{
+  z-index: 2;
+  padding:32px 64px;
+  height: 100%;
+  width: 80vw;
+  margin:0 auto;
+  display: flex;
+  flex-direction:column ;
+  gap: 100px;
+  
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-content h1{
+  font-family: "Courgette", cursive;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 50px;
+}
+
+.hero-content h3{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 40px;
+  text-align: center;
+}
+.hero-content button{
+  display: inline-block;
+  height:30px;
+  padding: 4px 16px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid white ;
+  background: rgba(255, 255, 255, 0.1);
+  color: black;
+  box-shadow: 2px 4px 8px white;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 3px;
+}
+
+.hero-content button:hover{
+  cursor: pointer;
+  box-shadow: 2px 4px 20px purple;
+  transition: ease-in-out 0.3s;
+  color:white ;
+  background: rgba(247, 97, 97, 0.1);
+  border: 1px solid  purple ;
+
+}

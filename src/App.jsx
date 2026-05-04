@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import ProjectList from "./components/ProjectList";
+import HeroSection  from "./components/hero-section-navbar/HeroSection";
 // import AddProject from './components/AddProject'
 // import DisplayProjects from './components/DisplayProjects'
 
@@ -35,8 +36,11 @@ function App() {
   });
   return (
     <main>
+    {/* Hero section and navbar*/}
+    <HeroSection />
       {/* project adding and searching section */}
-      <section className="projectSection">
+      <section className ='projectSection'>
+      <div className="projectBody">
         {/* adding projects  */}
         <div className="addProject">
           <h1>ADD PROJECT</h1>
@@ -78,6 +82,7 @@ function App() {
           </form>
           <ProjectList searchedProject = {searchedProject.length ? searchedProject :projects} />
         </div>
+      </div>
       </section>
     </main>
   );

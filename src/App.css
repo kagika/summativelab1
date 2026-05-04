@@ -8,19 +8,25 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
   font-family: Arial, sans-serif;
+  text-decoration: none;
 }
 
 main {
   background: var(--bg);
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
 }
 
-.projectSection {
+
+.projectSection{
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top:30px;
+}
+
+.projectBody {
   background: var(--card);
   width: 100%;
   max-width: 400px;
@@ -30,6 +36,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 20px;
+
 }
 
 /* ADD PROJECT */
